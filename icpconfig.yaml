@@ -1,13 +1,22 @@
 apiVersion: v1
 clusters:
 - cluster:
-    insecure-skip-tls-verify: true                                                                                          server: https://174.37.17.188:8001
-  name: optumera                                                                                                        contexts:
+    insecure-skip-tls-verify: true
+    server: https://174.37.17.188:8001
+  name: optumera
+contexts:
 - context:
     cluster: optumera
     namespace: user6
-    user: user6                                                                                                           name: optumera-context                                                                                                current-context: optumera-context                                                                                       kind: Config                                                                                                            preferences: {}                                                                                                         users:                                                                                                                  - name: optumera-user
+    user: user6
+  name: optumera-context
+current-context: optumera-context
+kind: Config
+preferences: {}
+users:
+- name: optumera-user
   user:
     token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiOGZmYzU5M2Y4MGIwYzEzOGI3OTJkZGZjYjcyYTg0OGY4Mzg1N2MwNyIsInJlYWxtTmFtZSI6ImN1c3RvbVJlYWxtIiwidW5pcXVlU2VjdXJpdHlOYW1lIjoidXNlcjYiLCJpc3MiOiJodHRwczovL29wdHVtZXJhLmljcDo5NDQzL29pZGMvZW5kcG9pbnQvT1AiLCJhdWQiOiI2MTkxMTQ4YjE2ZDdhNWI1MTRjNzQyMGE2NGE2NmZkNSIsImV4cCI6MTU2MDc4ODU5MSwiaWF0IjoxNTYwNzU5NzkxLCJzdWIiOiJ1c2VyNiIsInRlYW1Sb2xlTWFwcGluZ3MiOlsic3lzdGVtOm1hc3RlcnMiXX0.MFDWQCGIaFGd-bByGRmNkezsHr1LskixcL1Y5HnhqWCWyYezpkAGFOMvje3weGxO44epUBKIUqSCQ36RBrKWa0Pl_TpUQR88oeXHNsNPbmSHsu2j6Qod1ZERxNTno9mZ98PFDeDA8FxYC6FK7VK0R3LoAOmPQIQliMSdl2fCGVHj5zDjp2awVdNZW5poLfccR4nMmrS8pnYptmEKYXXfu1SHnGr68mKwmvxnS4lNQ04Vo-cR0HDHLMrOzp2h1q4m4XAsF4jnRofsre-000l51Ky2CKYigTLipR_-baWz54XmgL7uY4PRfu-hZT31YrL8uI8onjcwmPa1CDA7VU7bag
-- name: user6                                                                                                             user:
+- name: user6
+  user:
     token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiNzJiZjExZDM2ZDU2YzQwMThjZThkNjY4OThjZmQxM2QxNWYyYzFjNSIsInJlYWxtTmFtZSI6ImN1c3RvbVJlYWxtIiwidW5pcXVlU2VjdXJpdHlOYW1lIjoidXNlcjYiLCJpc3MiOiJodHRwczovL29wdHVtZXJhLmljcDo5NDQzL29pZGMvZW5kcG9pbnQvT1AiLCJhdWQiOiI2MTkxMTQ4YjE2ZDdhNWI1MTRjNzQyMGE2NGE2NmZkNSIsImV4cCI6MTU2MDg4NTUyOCwiaWF0IjoxNTYwODU2NzI4LCJzdWIiOiJ1c2VyNiIsInRlYW1Sb2xlTWFwcGluZ3MiOlsic3lzdGVtOm1hc3RlcnMiXX0.bTKUvk61GjH0ICwVH5MKncvTF7wM_p7aI1l4Xqr1ZIHQNAVeE3TX6SwC0wy3sIfRe-CF3fp9txF7cPZ6VMzG4IkVzem0GuM37anTFRfzkG31vBWXeq4bnfikuZZ0qImsuvolhNjc45NXWIRJt0cBYtZSYxEOvlqCUchLnLazBLWol_5vqKFQXjCdj2e7NK7gCjYq0E2riBBbRX8Td0mCig1r1IrwYUA2PUIortAbmEc9wI7n5OKd4OI-Nd0NsvFnpAlmiRIyM5k3tU5_MiESjqrL2yGQS9UYSHS4vCNV1VfEknk1S7eKm-SAucZpbRjpfTrITlUoEUdvMidt-HbaJA
